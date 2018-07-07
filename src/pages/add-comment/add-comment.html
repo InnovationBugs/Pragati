@@ -1,0 +1,49 @@
+<ion-header>
+
+  <ion-navbar color="custom">
+    <ion-title>Add New</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content class="masters">
+
+<ion-card>
+  <ion-list padding>
+    <ion-item>
+        <ion-label floating>Comment</ion-label>
+        <ion-input type="text" [(ngModel)]="new.comment"></ion-input>
+    </ion-item>
+
+    <ion-item>
+          <ion-label floating>Author</ion-label>
+          <ion-input type="text" [(ngModel)]="new.author"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label floating>Email</ion-label>
+        <ion-input type="text" [(ngModel)]="new.email"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Ratings</ion-label>
+          <ion-select [(ngModel)]="new.rating">
+            <ion-option value="Disliked">Disliked</ion-option>
+            <ion-option value="Moderate">Moderate</ion-option>
+            <ion-option value="Liked">Liked</ion-option>
+            <ion-option value="Interesting">Interesting</ion-option>
+            <ion-option value="Super Like">Super Like</ion-option>
+          </ion-select>
+      </ion-item>
+
+    </ion-list>
+
+    <button ion-button block clear (click)="addReview(new)">
+      Post Review
+    </button>
+    <ion-item></ion-item>
+
+</ion-card>
+
+
+</ion-content>
