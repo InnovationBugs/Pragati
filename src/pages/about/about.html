@@ -1,11 +1,49 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="custom">
     <ion-title>
       About
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
+  <ion-fab top right edge>
+    <button ion-fab color="custom-fab"><img src="assets/icon/translate-black.png" height=50% width=70%></button>
+    <ion-fab-list>
+      <button ion-fab (click)=toEng()><h3>A</h3></button>
+      <button ion-fab (click)=toHin()><h3>अ</h3></button>
+    </ion-fab-list>
+  </ion-fab>
+  </ion-content>
 
-</ion-content>
+      <ion-content class="tutorial-page">
+      
+        <ion-slides pager>
+          <ion-slide>
+            <img [src]="slides[0].image" class="slide-image"/>
+            <h2 class="slide-title" [innerHTML]="e1"></h2>
+            <p [innerHTML]="ed1"></p>
+          </ion-slide>
+
+          <ion-slide>
+            <img [src]="slides[1].image" class="slide-image"/>
+            <h2 class="slide-title" [innerHTML]="e2"></h2>
+            <p [innerHTML]="ed2"></p>
+          </ion-slide>
+
+          <ion-slide>
+            <img [src]="slides[2].image" class="slide-image"/>
+            <h2 class="slide-title" [innerHTML]="e3"></h2>
+            <p [innerHTML]="ed3"></p>
+          </ion-slide>
+
+          <ion-slide>
+            <ion-toolbar>
+            </ion-toolbar>
+            <img src="assets/imgs/ica-slidebox-img-4.png" class="slide-image"/>
+            <h2 class="slide-title">{{e4}}</h2>
+          </ion-slide>
+        </ion-slides>
+      </ion-content>
+
+
