@@ -1,0 +1,109 @@
+
+<ion-header>
+
+  <ion-navbar color="custom">
+    <ion-title>Wish to Donate</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<!--fab Bar-->
+<ion-content>
+  <ion-fab top right edge>
+    <button ion-fab mini color="title" (click)="showInfo()"><ion-icon name="help" ></ion-icon></button>
+  </ion-fab>
+  </ion-content>
+
+<!--Main content-->
+<ion-content class="masters">
+
+  <ion-card>
+      <ion-card-content>
+        <p text-center><i>Please tell us what you can contribute today.</i></p>
+          <ion-list>
+
+              <ion-item>
+                <ion-input type="text" placeholder="Items(eg: Bread, Vegetables, Curry etc.)" [(ngModel)]="food.items"></ion-input>
+              </ion-item>
+            
+              <ion-item>
+                  <ion-label>Collection time</ion-label>
+                  <ion-datetime displayFormat="H:m" pickerFormat="H m" [(ngModel)]="food.time"></ion-datetime>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label>Is the food fresh ?</ion-label>
+                    <ion-toggle checked="true" [(ngModel)]="food.fresh"></ion-toggle>
+                </ion-item>
+
+               <ion-item>Hygiene indicator :<ion-badge color="primary" item-end color="custom">{{food.hygiene}}</ion-badge></ion-item>
+
+                <ion-item>
+                    <ion-range min="0" max="10" step="1" snaps="true" color="custom" [(ngModel)]="food.hygiene">
+                      <ion-icon range-left small color="danger" name="nutrition"></ion-icon>
+                      <ion-icon range-right color="danger" name="nutrition"></ion-icon>
+                    </ion-range>
+              </ion-item>
+
+              <ion-item>
+                <ion-input type="text" placeholder="Doner's name" [(ngModel)]="food.name"></ion-input>
+              </ion-item>
+
+              <ion-item>
+                <ion-input type="text" placeholder="Pickup Address" [(ngModel)]="food.address"></ion-input>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>State</ion-label>
+                <ion-select [(ngModel)]="food.state">
+                  <ion-option value="Andhra Pradesh">Andhra Pradesh</ion-option>
+                  <ion-option value="Arunachal Pradesh">Arunachal Pradesh</ion-option>
+                  <ion-option value="Assam">Assam</ion-option>
+                  <ion-option value="Bihar">Bihar</ion-option>
+                  <ion-option value="Goa">Goa</ion-option>
+                  <ion-option value="Gujarat">Gujarat</ion-option>
+                  <ion-option value="Haryana">Haryana</ion-option>
+                  <ion-option value="Himachal Pradesh">Himachal Pradesh</ion-option>
+                  <ion-option value="Jammu and Kashmir">Jammu and Kashmir</ion-option>
+                  <ion-option value="Jharkhand">Jharkhand</ion-option>
+                  <ion-option value="Karnataka">Karnataka</ion-option>
+                  <ion-option value="Kerala">Kerala</ion-option>
+                  <ion-option value="Madhya Pradesh">Madhya Pradesh</ion-option>
+                  <ion-option value="Maharashtra">Maharashtra</ion-option>
+                  <ion-option value="Manipur">Manipur</ion-option>
+                  <ion-option value="Meghalaya">Meghalaya</ion-option>
+                  <ion-option value="Mizoram">Mizoram</ion-option>
+                  <ion-option value="Nagaland">Nagaland</ion-option>
+                  <ion-option value="Odisha">Odisha</ion-option>
+                  <ion-option value="Punjab">Punjab</ion-option>
+                  <ion-option value="Rajasthan">Rajasthan</ion-option>
+                  <ion-option value="Sikkim">Sikkim</ion-option>
+                  <ion-option value="Tamil Nadu">Tamil Nadu</ion-option>
+                  <ion-option value="Telangana">Telangana</ion-option>
+                  <ion-option value="Tripura">Tripura</ion-option>
+                  <ion-option value="Uttar Pradesh">Uttar Pradesh</ion-option>
+                  <ion-option value="Uttarakhand">Uttarakhand</ion-option>
+                  <ion-option value="West Bengal">West Bengal</ion-option>
+
+                </ion-select>
+              </ion-item>
+
+              <ion-item>
+                <ion-input type="text" placeholder="Contact no." [(ngModel)]="food.contact"></ion-input>
+              </ion-item>
+
+                <ion-content padding-top></ion-content>
+                <button ion-button color="custom" block (click)="donate(food)">DONATE</button>
+
+                <ion-item>
+                  <p text-center>We will get in touch with you soon.</p>
+                </ion-item>
+              
+
+            
+            </ion-list>
+      </ion-card-content>
+    </ion-card>
+  
+
+</ion-content>
