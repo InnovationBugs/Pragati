@@ -1,0 +1,60 @@
+
+<ion-header>
+
+  <ion-navbar color="custom">
+    <ion-title>Thank You</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+
+<ion-content class="masters">
+    <ion-fab right bottom>
+        <button ion-fab color="secondary" (click)="goHome()"><ion-icon name="home"></ion-icon></button>
+      </ion-fab>
+  
+  <ion-item no-lines margin-top margin-right margin-left class="masters">
+    <ion-icon name="checkmark-circle" item-start large color="secondary"></ion-icon>
+    <h2 color="custom"><b>Data Uploaded</b></h2>
+    <p text-wrap color="custom">We will get in touch with you soon.</p>
+  </ion-item> 
+  <ion-item no-lines class="masters">
+    <p>Your Donation Details</p>
+  </ion-item>
+
+  <ion-card no-padding>
+    <ion-item>
+      <ion-icon name="filing" item-start large ></ion-icon>
+      <h2>{{temp.items}}</h2>
+    </ion-item>
+
+    <ion-item >
+      <ion-icon name="time" item-start large ></ion-icon>
+      <h2>Collection Time: <b>{{temp.time}}</b></h2>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="person" item-start large></ion-icon>
+      {{temp.name}}
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="home" item-start large></ion-icon>
+     {{temp.address}}
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="map" item-start large></ion-icon>
+     {{temp.state}}
+    </ion-item>
+
+    <ion-item >
+      <ion-icon name="call" item-start large></ion-icon>
+    {{temp.contact}}
+    </ion-item>
+
+  </ion-card>
+
+
+</ion-content>

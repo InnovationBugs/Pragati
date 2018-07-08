@@ -1,0 +1,69 @@
+<!--
+  Generated template for the VolSignupPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="custom">
+    <ion-title>Register as Volunteer</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding-top class="masters">
+    <ion-card>
+
+        <ion-card-header>
+            <h1 text-center>Create an account</h1>
+          </ion-card-header>
+        <ion-card-content>
+          Please let us know you better. We appreciate your generous move towards this noble cause.
+        </ion-card-content>
+        
+        <ion-list padding-right padding-left>
+
+            <ion-item>
+              <ion-label floating>Email</ion-label>
+              <ion-input type="text" [(ngModel)]="user.email"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label floating>Full Name</ion-label>
+                <ion-input type="text" [(ngModel)]="fullName"></ion-input>
+              </ion-item>
+          
+            <ion-item>
+              <ion-label floating>Password (Min 6 Characters)</ion-label>
+              <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label floating>Verify Password</ion-label>
+                <ion-input type="password" [(ngModel)]="verPassword"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label floating>NGO Registration ID</ion-label>
+                <ion-input type="text" [(ngModel)]="ngo"></ion-input>
+            </ion-item>
+          
+            <ion-item>
+                <ion-label floating>Contact No.</ion-label>
+                <ion-input type="number" [(ngModel)]="contact"></ion-input>
+            </ion-item>
+
+          </ion-list>
+
+          <ion-content padding-top></ion-content>
+          <button ion-button block clear (click)="register(user)">CREATE ACCOUNT</button>
+          <ion-content padding-top></ion-content>
+      
+      </ion-card>
+      
+
+     
+
+</ion-content>

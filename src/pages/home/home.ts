@@ -14,7 +14,7 @@ import { TestimonalsPage } from '../testimonals/testimonals';
 export class HomePage {
 
   updates=2;
-  url : string = 'https://pragati-app.firebaseapp.com';
+  url : string = 'https://pragati-app.herokuapp.com/';
 
   e1 = 'Navigation';
   e2 = 'HOME';
@@ -30,7 +30,7 @@ export class HomePage {
   h3 = 'खाना चाहिए ?';
   h4 = 'मदद करने के लिए इच्छा?';
   h5 = 'दान करने के लिए इच्छा है?';
-  h6 = 'प्रशंसापत्र';
+  h6 = 'समीक्षा';
   h7 = 'नवीनतम अपडेट';
 
 
@@ -48,7 +48,7 @@ export class HomePage {
   this.e3 = 'NEED FOOD ?';
   this.e4 = 'WISH TO VOLUNTEER ?';
   this.e5 = 'WISH TO DONATE ?';
-  this.e6 = 'TESTIMONIALS';
+  this.e6 = 'REVIEWS';
   this.e7 = 'Latest Updates';
 
 

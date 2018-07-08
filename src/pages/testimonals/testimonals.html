@@ -1,0 +1,40 @@
+<ion-header>
+
+  <ion-navbar color="custom">
+    <ion-title>Reviews</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  <ion-fab top right edge>
+    <button ion-fab color="custom-fab" (click)="newComment()"><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
+  </ion-content>
+
+
+<ion-content padding class="masters">
+
+<!--<ion-card  *ngFor="let item of items | async">
+   <ion-item>
+        {{item.comment}}
+      </ion-item>
+</ion-card>-->
+<ion-card>
+  <ion-item>
+    <ion-icon name="quote" item-start large></ion-icon>
+    <h2>Great App !!</h2>
+    <p>(Interesting) by <b>Govind</b></p>
+  </ion-item>
+</ion-card>
+
+<ion-card>
+  <ion-item>
+    <ion-icon name="quote" item-start large></ion-icon>
+    <h2>Keep it Up</h2>
+    <p>(Super Like) by <b>Raj</b></p>
+  </ion-item>
+</ion-card>
+
+
+</ion-content>

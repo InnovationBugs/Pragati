@@ -1,0 +1,108 @@
+<ion-header>
+
+  <ion-navbar color="custom">
+    <ion-title>Need Food</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<!--fab bar start here-->
+  <ion-content>
+    <ion-fab top right edge>
+      <button ion-fab mini color="title" (click)="showInfo()"><ion-icon name="help-circle"></ion-icon></button>
+    </ion-fab>
+    </ion-content>
+
+    <!--Main content from here-->
+
+  <ion-content padding-top class="masters">
+    <ion-card>
+
+        <ion-card-header>
+            <h1 text-center>Please fill the details</h1>
+          </ion-card-header>
+
+        <ion-list padding-right padding-left>
+
+            <ion-item>
+              <ion-label floating>Full Name</ion-label>
+              <ion-input type="text" [(ngModel)]="poor.name"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label floating>Age</ion-label>
+                <ion-input type="number" [(ngModel)]="poor.age"></ion-input>
+              </ion-item>
+          
+            <ion-item>
+              <ion-label floating>Address</ion-label>
+              <ion-input type="text" [(ngModel)]="poor.address"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label>Select State</ion-label>
+              <ion-select [(ngModel)]="poor.state">
+                <ion-option value="Andhra Pradesh">Andhra Pradesh</ion-option>
+                <ion-option value="Arunachal Pradesh">Arunachal Pradesh</ion-option>
+                <ion-option value="Assam">Assam</ion-option>
+                <ion-option value="Bihar">Bihar</ion-option>
+                <ion-option value="Goa">Goa</ion-option>
+                <ion-option value="Gujarat">Gujarat</ion-option>
+                <ion-option value="Haryana">Haryana</ion-option>
+                <ion-option value="Himachal Pradesh">Himachal Pradesh</ion-option>
+                <ion-option value="Jammu and Kashmir">Jammu and Kashmir</ion-option>
+                <ion-option value="Jharkhand">Jharkhand</ion-option>
+                <ion-option value="Karnataka">Karnataka</ion-option>
+                <ion-option value="Kerala">Kerala</ion-option>
+                <ion-option value="Madhya Pradesh">Madhya Pradesh</ion-option>
+                <ion-option value="Maharashtra">Maharashtra</ion-option>
+                <ion-option value="Manipur">Manipur</ion-option>
+                <ion-option value="Meghalaya">Meghalaya</ion-option>
+                <ion-option value="Mizoram">Mizoram</ion-option>
+                <ion-option value="Nagaland">Nagaland</ion-option>
+                <ion-option value="Odisha">Odisha</ion-option>
+                <ion-option value="Punjab">Punjab</ion-option>
+                <ion-option value="Rajasthan">Rajasthan</ion-option>
+                <ion-option value="Sikkim">Sikkim</ion-option>
+                <ion-option value="Tamil Nadu">Tamil Nadu</ion-option>
+                <ion-option value="Telangana">Telangana</ion-option>
+                <ion-option value="Tripura">Tripura</ion-option>
+                <ion-option value="Uttar Pradesh">Uttar Pradesh</ion-option>
+                <ion-option value="Uttarakhand">Uttarakhand</ion-option>
+                <ion-option value="West Bengal">West Bengal</ion-option>
+
+              </ion-select>
+            </ion-item>
+
+            <ion-item>
+                <ion-label floating>Adhaar No.</ion-label>
+                <ion-input type="text" [(ngModel)]="poor.adhaar"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label floating>Landmark</ion-label>
+                <ion-input type="text" [(ngModel)]="poor.landmark"></ion-input>
+            </ion-item>
+          
+            <ion-item>
+                <ion-label floating>Contact No.</ion-label>
+                <ion-input type="text" [(ngModel)]="poor.contact"></ion-input>
+            </ion-item>
+
+          </ion-list>
+
+          <ion-content padding-top></ion-content>
+          <button ion-button block clear color="custom" (click)="order(poor)">Place Order</button>
+          <p text-center style="color: #9e9e9e">You will recieve a SMS if you order is proceeded.</p>
+          <ion-content padding-top></ion-content>
+      
+      </ion-card>
+      
+
+     
+
+</ion-content>
+
+ 
+
