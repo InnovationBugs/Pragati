@@ -1,3 +1,5 @@
+<img width="400" height="150" alt="screenshot" src="https://user-images.githubusercontent.com/27961735/42584965-050349ec-8552-11e8-86c9-7f4bda032440.png">
+
 # Pragti App
 This is an App that can help poor/needy people get FREE food for lifetime. 
 
